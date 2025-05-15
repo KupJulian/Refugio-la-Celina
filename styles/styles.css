@@ -6,25 +6,28 @@
 h1 {
     text-decoration: underline;
     text-align: center;
+    padding: 0%;
+    margin: 0%;
 
 }
 
 #logo { 
-    height: 15vh;
-    width: 10vw;
+    height: 8vh;
+    width: 5vw;
+
 
 }
 
 p img {
-    height:40vh ;
-    width: 20vw;
+    height:35vh ;
+    width: 15vw;
     
 }
 
 h2 {
-    margin: auto;
+    margin: 0;
     width: 50%;
-    text-decoration: underline; color: aquamarine;
+    text-decoration: underline; color: rgb(0, 0, 0);
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 200%;
@@ -53,25 +56,10 @@ form {
 
 }
 
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%; 
-    color: white;
-    text-align: center;
-}
 
 section {
     margin: 5%;
 }
-
-li a{
-    text-decoration: none;
-    color: aquamarine;
-    font-size: 200%;
-}
-
-
 
 video{
     width:60vh;
@@ -83,10 +71,96 @@ video{
 }
 
 body{
-    background-color: blueviolet;
+    background-color: rgba(141, 236, 253, 0.226);
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
 }
 
-button {
-    background-color: brown;
+div img {
+    height: 30vh;
+    width: 10vw;
     
 }
+.nav{
+    display: grid;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: white;
+    border: solid 1px;
+
+
+}
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: stretch;
+    
+}
+
+.nav li {
+    margin-right: 5px;
+    height: 100%;
+    
+    
+    
+}
+.nav a {
+    text-decoration: none;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: black;
+    
+
+} 
+
+li {
+    font-size: 250%;
+    
+} 
+
+.nav li:hover {
+
+    background-color:  rgba(141, 236, 253, 0.226);
+
+    
+}
+
+.maintienda {
+    display: grid;
+    align-content: center;
+
+}
+
+.tienda {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton {
+    height: 5vh;
+    width: 10vw;
+    border-radius: 15px;
+    background-color: rgb(42, 165, 159);
+    border: solid 3px;
+}
+.footer {
+    margin-top: auto;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+
