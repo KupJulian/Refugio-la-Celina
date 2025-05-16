@@ -151,6 +151,7 @@ div img {
     display: flex;
     align-items: center;
     color: black;
+    font-size: 30px ;
 
 
 }
@@ -275,7 +276,7 @@ li {
     }
 
     .button {
-        grid-column: 3;
+        grid-column: 2;
         grid-row: 4;
 
     }
@@ -293,6 +294,14 @@ li {
     .boton {
         width: 22%;
         height: 20%;
+    }
 
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer img {
+        width: 7%;
+        height: 7%;
     }
 }
