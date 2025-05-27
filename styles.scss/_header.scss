@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: solid 1px;
+
+    .logo {
+        height: 8vh;
+        width: 5vw;
+    }
+
+    .nav li {
+        margin-right: 5px;
+        height: 100%;
+    }
+
+    .nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: stretch;
+    }
+
+    .nav li:hover {
+        background-color: rgba(141, 236, 253, 0.226);
+    }
+}
