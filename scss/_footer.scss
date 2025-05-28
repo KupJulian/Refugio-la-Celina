@@ -1,0 +1,22 @@
+.footer {
+    margin-top: auto;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h4 img {
+        width: 4vh;
+        height: 2vw;
+    }
+
+    @include mobile {
+        flex-direction: column;
+
+        h4 img {
+            width: 7%;
+            height: 7%;
+        }
+    }
+}
