@@ -57,7 +57,7 @@
         cursor: pointer;
         grid-column: 1;
         grid-row: 4;
-        width: 10%;
+        width: 50%;
         height: 100%;
     }
 
@@ -75,5 +75,31 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+
+        h2 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        form {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        iframe {
+            grid-column: 1;
+            grid-row: 5;
+        }
+
+        button {
+            grid-column: 1;
+            grid-row: 4;
+        }
+    }
+
 
 }

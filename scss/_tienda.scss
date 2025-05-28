@@ -1,0 +1,32 @@
+.tienda {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        height: 5vh;
+        width: 10vw;
+        border-radius: 15px;
+        background-color: rgb(42, 165, 159);
+        border: solid 3px;
+    }
+
+    img {
+        height: 35vh;
+        width: 15vw;
+    }
+
+    @include mobile {
+        flex-direction: column;
+
+        img {
+            height: auto;
+            width: 60%;
+        }
+
+        button {
+            width: 22%;
+            height: 20%;
+        }
+    }
+
+}
