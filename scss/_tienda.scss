@@ -10,9 +10,15 @@
         border: solid 3px;
     }
 
+    button:hover {
+        animation: vibrate 0.5s;
+    }
+
     img {
         height: 35vh;
         width: 15vw;
+        border: solid 1px;
+        border-radius: 15px;
     }
 
     @include mobile {
@@ -28,5 +34,4 @@
             height: 20%;
         }
     }
-
 }

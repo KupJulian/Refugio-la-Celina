@@ -1,0 +1,46 @@
+.main {
+    padding: 2rem;
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    video {
+        width: 70%;
+        height: 80%;
+        margin: 15px 40px 10px 200px;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @include mobile {
+        padding: 0;
+        margin: 0;
+
+        video {
+            width: 30vh;
+            height: 90%;
+        }
+    }
+}
+
+.card {
+    width: 100%;
+    max-width: 20rem;
+    margin-top: 2rem;
+    transform: translateX(300px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgb(165, 230, 230);
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    @include mobile {
+        display: none;
+    }
+}

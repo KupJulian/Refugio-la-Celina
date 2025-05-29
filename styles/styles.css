@@ -43,14 +43,23 @@ h2 {
   object-position: center;
 }
 
-video {
-  width: 60vh;
-  height: 40vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(6px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -137,8 +146,7 @@ video {
   width: 40%;
   text-align: right;
   max-width: 100%;
-  height: auto;
-  max-height: 300px;
+  height: 80%;
 }
 @media (max-width: 425px) {
   .conocenos {
@@ -211,6 +219,7 @@ video {
 }
 .contenedor button:hover {
   background-color: #0097a7;
+  animation: vibrate 0.5s;
 }
 .contenedor iframe {
   grid-column: 2;
@@ -256,9 +265,14 @@ video {
   background-color: rgb(42, 165, 159);
   border: solid 3px;
 }
+.tienda button:hover {
+  animation: vibrate 0.5s;
+}
 .tienda img {
   height: 35vh;
   width: 15vw;
+  border: solid 1px;
+  border-radius: 15px;
 }
 @media (max-width: 425px) {
   .tienda {
@@ -271,6 +285,51 @@ video {
   .tienda button {
     width: 22%;
     height: 20%;
+  }
+}
+
+.main {
+  padding: 2rem;
+}
+.main section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.main video {
+  width: 70%;
+  height: 80%;
+  margin: 15px 40px 10px 200px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 425px) {
+  .main {
+    padding: 0;
+    margin: 0;
+  }
+  .main video {
+    width: 30vh;
+    height: 90%;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 20rem;
+  margin-top: 2rem;
+  transform: translateX(300px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: rgb(165, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+@media (max-width: 425px) {
+  .card {
+    display: none;
   }
 }
 

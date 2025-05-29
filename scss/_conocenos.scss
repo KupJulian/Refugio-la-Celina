@@ -16,8 +16,7 @@
         width: 40%;
         text-align: right;
         max-width: 100%;
-        height: auto;
-        max-height: 300px;
+        height: 80%;
     }
 
     @include mobile {
@@ -32,7 +31,5 @@
         img {
             display: none;
         }
-
     }
-
 }
