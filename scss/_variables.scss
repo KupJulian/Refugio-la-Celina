@@ -25,51 +25,52 @@ li {
     border: 2px solid red;
 }
 
-    h2 {
-        margin: 0;
-        width: 50%;
-        text-decoration: underline;
-        color: rgb(0, 0, 0);
-        padding: 10px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 200%;
+h2 {
+    margin: 0;
+    width: 50%;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
     }
 
-    .carousel-item img {
-        height: 500px;
-        width: 100%;
-        object-fit: contain;
-        object-position: center;
+    25% {
+        transform: translateX(6px);
     }
 
-
-    @keyframes vibrate {
-        0% {
-            transform: translateX(0);
-        }
-
-        25% {
-            transform: translateX(6px);
-        }
-
-        50% {
-            transform: translateX(0);
-        }
-
-        75% {
-            transform: translateX(6px)
-        }
-
-        100% {
-            transform: translateX(0);
-        }
+    50% {
+        transform: translateX(0);
     }
 
-
-
-
-    @mixin mobile {
-        @media (max-width: 425px) {
-            @content
-        }
+    75% {
+        transform: translateX(6px)
     }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+@mixin mobile {
+    @media (max-width: 425px) {
+        @content
+    }
+}
